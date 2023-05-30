@@ -1,6 +1,28 @@
 @media (max-width:500px) {
 
 
+    .loader::before, .loader::after{
+        content: '';
+        border: 1vw solid #ff9933;
+        /* background: #ff5733; */
+        border-radius: 50%;
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: loader 2s infinite ;
+        opacity: 0;
+    }
+
+    .images-slideshow img {
+        margin: auto;
+        display: block;
+        width: 99%;
+        height: 80vh;
+        object-fit: cover;
+    }
+
     .nav {
         height: 6vh;
         background-color: rgba(29, 28, 28, 0.593);
@@ -9,11 +31,11 @@
         /* display: none; */
     }
     .phone{
-        border: 2px solid rgb(197, 138, 19);
+        border: 2px solid rgb(230, 154, 2);
     }
 
     .phone:hover {
-        background-color: rgb(197, 138, 19);
+        background-color: rgb(233, 158, 8);
         color: black;
     }
 
