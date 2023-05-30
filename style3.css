@@ -693,7 +693,7 @@ body {
     position: absolute;
     width: 30vw;
     height: 71vh;
-    background-color: yellow;
+    /* background-color: yellow; */
     left: 5%;
     top: 25%;
     overflow: hidden;
@@ -1217,10 +1217,54 @@ body {
 
 
 
+.loader-bg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #050505;
+    z-index: 1000000;
+}
+.loader{
+    border: 0 solid transparent;
+    /* background-color: red; */
+    border-radius: 50%;
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.loader::before, .loader::after{
+    content: '';
+    border: 1em solid #ff9933;
+    /* background: #ff5733; */
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s infinite ;
+    opacity: 0;
+}
+.loader::before{
+    animation-delay: .5s;
+}
 
-
-
-
+@keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
 
 
 
