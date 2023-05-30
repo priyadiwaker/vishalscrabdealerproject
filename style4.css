@@ -201,8 +201,8 @@
 
     .next{
         cursor: pointer;
-        position: fixed;
-        top: 49%;
+        position: sticky;
+         top: 36%;
         width: auto;
         padding: 11px 16px;
         /* margin-top: -9vh; */
